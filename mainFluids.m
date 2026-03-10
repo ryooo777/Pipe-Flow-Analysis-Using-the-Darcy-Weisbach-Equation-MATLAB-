@@ -52,7 +52,7 @@ end
 [minPower,index]=min(Ploss1);
 Optimaldiam=Dlist(index);
 
-
+disp('')
 disp('              Pipe Flow Analysis')
 disp('-------------------------------------------------')
 fprintf('Fluid: %s\n',fluids(rhoinput));
@@ -60,10 +60,14 @@ fprintf('Material: %s\n',Materials(material_choice));
 fprintf('Reynolds Range: %.0f - %.0f\n',min(Relist),max(Relist));
 fprintf('Optimal Diameter: %4.4fm\n',Optimaldiam);
 fprintf('Minimum Pump Power: %4.4fW\n',minPower);
-disp('Pressure Drop ΔP1 (Pa)   Pressure Drop ΔP2 (Pa)   Diameter (m)');
-for i=1:length(Dlist)
-    fprintf('     %10.4f              %10.4f            %6.4f\n', ...
-        delta1Plist(i),delta2Plist(i),Dlist(i));
+fprintf('\n%20s %20s %15s\n', ...
+'Pressure Drop ΔP1 (Pa)', ...
+'Pressure Drop ΔP2 (Pa)', ...
+'Diameter (m)');
+
+for i = 1:length(Dlist)
+    fprintf('%20.4f %20.4f %15.4f\n', ...
+        delta1Plist(i), delta2Plist(i), Dlist(i));
 end
 figure;
 hold on;
