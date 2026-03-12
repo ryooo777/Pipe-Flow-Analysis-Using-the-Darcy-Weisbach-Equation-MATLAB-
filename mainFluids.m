@@ -57,8 +57,11 @@ disp('              Pipe Flow Analysis')
 disp('-------------------------------------------------')
 fprintf('Fluid: %s\n',fluids(rhoinput));
 fprintf('Material: %s\n',Materials(material_choice));
+fprintf('\n')
+
 fprintf('Reynolds Range: %.0f - %.0f\n',min(Relist),max(Relist));
 fprintf('Optimal Diameter: %4.4fm\n',Optimaldiam);
+fprintf('\n')
 fprintf('Minimum Pump Power: %4.4fW\n',minPower);
 fprintf('\n%20s %20s %15s\n', ...
 'Pressure Drop ΔP1 (Pa)', ...
