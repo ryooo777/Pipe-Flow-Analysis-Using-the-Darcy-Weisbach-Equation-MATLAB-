@@ -1,7 +1,7 @@
-### Pipe Flow Analysis Using the Darcy Weisbach Equation MATLAB
+## Pipe Flow Analysis Using the Darcy Weisbach Equation MATLAB
 This MATLAB program analyzes pressure losses in fluid flow through pipes using the Darcy–Weisbach equation. Friction factors are computed using both the Colebrook equation and the Haaland approximation.
 
-## Development
+### Development
 # Option 1: Using MATLAB Online (Recommended for Quick Start)
 1. Go to MathWorks and register for an account if you don’t already have one.
 2. Sign in, then navigate to MATLAB Online and click Launch MATLAB Online.
