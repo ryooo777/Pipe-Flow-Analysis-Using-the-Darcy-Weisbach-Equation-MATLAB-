@@ -1,8 +1,12 @@
 L=input('What is the Pipe Length (m)? ');
+fprintf('\n')
 V=input('What is the Velocity (m/s)? ');
+fprintf('\n')
 disp('Choose the fluids...')
 disp('1=Water, 2=Air, 3=Oil, 4=Manual')
+fprintf('\n')
 rhoinput=input('Enter the number: ');
+fprintf('\n')
 if rhoinput==4
     K="Custom";
     rho=input('What is the Fluid density (kg/m^3)? ');
@@ -17,6 +21,7 @@ else
 end
 disp('Choose the pipe material...')
 disp('1=Concrete, 2=Steel, 3=PVC, 4=Manual')
+fprintf('\n')
 epislon_table=[(3*10^(-4)),(4.5*10^(-5)),1.5*10^(-6),];
 material_choice=input('Enter the number: ');
 if material_choice==4
